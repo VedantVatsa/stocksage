@@ -1,0 +1,66 @@
+/* Improve readability and spacing */
+.label {
+  margin-bottom: 1rem; /* Increase spacing below labels */
+}
+
+.modes {
+  margin-bottom: 2rem; /* Increase spacing below modes */
+}
+
+.button-container {
+  margin-bottom: 1rem; /* Increase spacing below button containers */
+}
+
+/* Add transitions for smoother animations */
+.fade-enter .btn {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-enter-active .btn,
+.fade-exit .btn {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-exit-active .btn {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+/* Add some cool hover effects */
+.btn:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  background-color: #ff6b6b; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add box shadow for a lifted effect */
+.btn {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Add gradient background for a modern look */
+body {
+  background-image: linear-gradient(to bottom, #4a90e2, #2f4f4f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Style headings */
+h1, h2, h3 {
+  color: #4a90e2; /* Heading text color */
+}
+
+/* Add a border to sections for separation */
+.section {
+  border: 1px solid #4a90e2;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
